@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pausely Privacy Policy</title>
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f6fa;
+      --card: #ffffff;
+      --text: #1f1f29;
+      --body-text: #4b4c58;
+      --muted: #62636e;
+      --muted-light: #777983;
+      --blue: #4b5fd7;
+      --blue-dark: #3548bd;
+      --blue-soft: #eef1ff;
+      --green: #46c264;
+      --green-soft: #ecfbf0;
+      --border: #e6e7ee;
+      --shadow: 0 12px 30px rgba(20, 20, 30, 0.06);
+      --shadow-strong: 0 18px 42px rgba(20, 20, 30, 0.08);
+      --radius: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--body-text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--blue-dark);
+    }
+
+    a:focus-visible {
+      outline: 3px solid rgba(75, 95, 215, 0.34);
+      outline-offset: 4px;
+      border-radius: 10px;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      color: var(--text);
+      line-height: 1.18;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 10px;
+    }
+
+    .page-shell {
+      width: min(100% - 32px, 860px);
+      margin: 0 auto;
+    }
+
+    .app-header {
+      padding: 34px 0 8px;
+    }
+
+    .subtitle {
+      margin: 10px 0 4px;
+      color: var(--muted);
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .updated {
+      margin: 0;
+      color: var(--muted-light);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    main.page-shell {
+      padding: 18px 0 0;
+    }
+
+    .card,
+    .policy-section,
+    .site-footer {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .summary-card {
+      padding: 26px;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .summary-card p {
+      color: var(--body-text);
+      font-size: 1.05rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 12px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      border: 1px solid rgba(75, 95, 215, 0.16);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .pill.is-green {
+      color: #247a37;
+      background: var(--green-soft);
+      border-color: rgba(70, 194, 100, 0.24);
+    }
+
+    .toc {
+      margin-top: 18px;
+      padding: 24px;
+    }
+
+    .toc h2 {
+      margin-bottom: 18px;
+    }
+
+    .toc ol {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .toc li {
+      margin: 0;
+    }
+
+    .toc a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      min-height: 56px;
+      padding: 12px 14px;
+      background: #f8f9fd;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      background: var(--blue-soft);
+      border-color: rgba(75, 95, 215, 0.24);
+    }
+
+    .policy-content {
+      display: grid;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .policy-section {
+      padding: 24px;
+      scroll-margin-top: 18px;
+    }
+
+    .section-topline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-topline .pill {
+      min-height: 30px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+
+    .policy-section p,
+    .policy-section li {
+      color: var(--body-text);
+    }
+
+    .policy-section strong {
+      color: var(--text);
+    }
+
+    .site-footer {
+      margin-top: 18px;
+      margin-bottom: 28px;
+      padding: 24px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .site-footer p + p {
+      margin-top: 8px;
+    }
+
+    .fine-print {
+      color: var(--muted-light);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    @media (min-width: 720px) {
+      .page-shell {
+        width: min(100% - 56px, 860px);
+      }
+
+      .app-header {
+        padding-top: 54px;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      .summary-card,
+      .toc,
+      .policy-section,
+      .site-footer {
+        padding: 32px;
+      }
+
+      .toc ol {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="page-shell">
+      <h1>Pausely</h1>
+      <p class="subtitle">Privacy Policy</p>
+      <p class="updated">Last updated: May 8, 2026</p>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="card summary-card" aria-labelledby="summary-title">
+      <h2 id="summary-title">Privacy at a Glance</h2>
+      <p>
+        Pausely helps users track app usage, manage screen-time limits, and receive notifications when limits are reached. This Privacy Policy explains how Pausely handles user information.
+      </p>
+      <div class="pill-row" aria-label="Key privacy details">
+        <span class="pill">Usage Access</span>
+        <span class="pill">Foreground Service</span>
+        <span class="pill is-green">Local Storage</span>
+        <span class="pill is-green">No Sale of Data</span>
+      </div>
+    </section>
+
+    <nav class="card toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">Contents</h2>
+      <ol>
+        <li><a href="#information-we-access">Information We Access</a></li>
+        <li><a href="#how-we-use-information">How We Use Information</a></li>
+        <li><a href="#data-storage">Data Storage</a></li>
+        <li><a href="#data-sharing">Data Sharing</a></li>
+        <li><a href="#foreground-service-usage">Foreground Service Usage</a></li>
+        <li><a href="#permissions-used">Permissions Used</a></li>
+        <li><a href="#user-control">User Control</a></li>
+        <li><a href="#data-retention-and-deletion">Data Retention and Deletion</a></li>
+        <li><a href="#childrens-privacy">Children's Privacy</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#changes-to-this-privacy-policy">Changes to This Privacy Policy</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <div class="policy-content">
+      <section id="information-we-access" class="policy-section" aria-labelledby="information-we-access-title">
+        <div class="section-topline">
+          <h2 id="information-we-access-title">1. Information We Access</h2>
+          <span class="pill">Usage Access</span>
+        </div>
+
+        <p>
+          Pausely may request access to app usage information on your device through Android's Usage Access permission. This access allows the app to detect which selected apps are being used and for how long.
+        </p>
+
+        <p>
+          Pausely may also use a foreground service to monitor app usage in the background and provide timely notifications related to usage limits.
+        </p>
+      </section>
+
+      <section id="how-we-use-information" class="policy-section" aria-labelledby="how-we-use-information-title">
+        <div class="section-topline">
+          <h2 id="how-we-use-information-title">2. How We Use Information</h2>
+        </div>
+
+        <p>
+          App usage information is used only to provide the core features of Pausely, including:
+        </p>
+
+        <ul>
+          <li>Tracking app usage time;</li>
+          <li>Showing usage statistics to the user;</li>
+          <li>Applying user-defined usage limits;</li>
+          <li>Sending notifications when usage limits are reached;</li>
+          <li>Keeping monitoring active when the user enables background monitoring.</li>
+        </ul>
+      </section>
+
+      <section id="data-storage" class="policy-section" aria-labelledby="data-storage-title">
+        <div class="section-topline">
+          <h2 id="data-storage-title">3. Data Storage</h2>
+          <span class="pill is-green">Local Storage</span>
+        </div>
+
+        <p>
+          Pausely stores app usage and settings data locally on your device. Pausely does not send app usage or settings data to a server in the current version described by this policy.
+        </p>
+
+        <p>
+          If future versions of Pausely introduce account features, cloud backup, analytics, or server-side storage, this Privacy Policy will be updated to explain what data is collected, how it is used, and how users can control or delete it.
+        </p>
+      </section>
+
+      <section id="data-sharing" class="policy-section" aria-labelledby="data-sharing-title">
+        <div class="section-topline">
+          <h2 id="data-sharing-title">4. Data Sharing</h2>
+          <span class="pill is-green">No Sale of Data</span>
+        </div>
+
+        <p>
+          Pausely does not share app usage data with third parties for advertising, marketing, or profiling purposes.
+        </p>
+
+        <p>
+          Pausely does not sell personal data.
+        </p>
+      </section>
+
+      <section id="foreground-service-usage" class="policy-section" aria-labelledby="foreground-service-usage-title">
+        <div class="section-topline">
+          <h2 id="foreground-service-usage-title">5. Foreground Service Usage</h2>
+          <span class="pill">Foreground Service</span>
+        </div>
+
+        <p>
+          Pausely may run a foreground service to monitor app usage while the app is not actively open. This is required for the app's screen-time tracking and limit notification features to work reliably.
+        </p>
+
+        <p>
+          The foreground service is used only for active app usage monitoring and notification delivery. Users can stop or disable monitoring from within the app.
+        </p>
+      </section>
+
+      <section id="permissions-used" class="policy-section" aria-labelledby="permissions-used-title">
+        <div class="section-topline">
+          <h2 id="permissions-used-title">6. Permissions Used</h2>
+        </div>
+
+        <p>
+          Pausely may request the following permissions depending on the Android version and enabled features:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Usage Access:</strong> Used to read app usage activity so Pausely can calculate screen time and enforce limits.
+          </li>
+          <li>
+            <strong>Notifications:</strong> Used to notify users when usage limits are reached or monitoring is active.
+          </li>
+          <li>
+            <strong>Foreground Service:</strong> Used to keep app usage monitoring active in the background.
+          </li>
+          <li>
+            <strong>Boot Completed:</strong> Used only when the user enables automatic restart of monitoring after device reboot.
+          </li>
+        </ul>
+      </section>
+
+      <section id="user-control" class="policy-section" aria-labelledby="user-control-title">
+        <div class="section-topline">
+          <h2 id="user-control-title">7. User Control</h2>
+        </div>
+
+        <p>
+          Users can control Pausely's monitoring features inside the app. Users can also revoke permissions at any time through Android system settings.
+        </p>
+
+        <p>
+          If Usage Access permission is disabled, Pausely may not be able to track app usage or enforce usage limits.
+        </p>
+      </section>
+
+      <section id="data-retention-and-deletion" class="policy-section" aria-labelledby="data-retention-and-deletion-title">
+        <div class="section-topline">
+          <h2 id="data-retention-and-deletion-title">8. Data Retention and Deletion</h2>
+        </div>
+
+        <p>
+          Locally stored app usage data and app settings remain on the user's device unless the user clears the app data or uninstalls the app.
+        </p>
+
+        <p>
+          Users can delete locally stored data by using the app's available controls, clearing app storage from Android settings, or uninstalling the app.
+        </p>
+      </section>
+
+      <section id="childrens-privacy" class="policy-section" aria-labelledby="childrens-privacy-title">
+        <div class="section-topline">
+          <h2 id="childrens-privacy-title">9. Children's Privacy</h2>
+        </div>
+
+        <p>
+          Pausely is not designed to knowingly collect personal information from children. If you believe that a child has provided personal information through the app, please contact us so we can review the issue.
+        </p>
+      </section>
+
+      <section id="security" class="policy-section" aria-labelledby="security-title">
+        <div class="section-topline">
+          <h2 id="security-title">10. Security</h2>
+        </div>
+
+        <p>
+          Pausely uses reasonable technical measures to protect locally stored data. However, no method of storage or transmission is completely secure.
+        </p>
+      </section>
+
+      <section id="changes-to-this-privacy-policy" class="policy-section" aria-labelledby="changes-to-this-privacy-policy-title">
+        <div class="section-topline">
+          <h2 id="changes-to-this-privacy-policy-title">11. Changes to This Privacy Policy</h2>
+        </div>
+
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date.
+        </p>
+      </section>
+
+      <section id="contact-us" class="policy-section" aria-labelledby="contact-us-title">
+        <div class="section-topline">
+          <h2 id="contact-us-title">12. Contact Us</h2>
+        </div>
+
+        <p>
+          If you have questions about this Privacy Policy or how Pausely handles data, you can contact us at:
+        </p>
+
+        <p>
+          <strong>Email:</strong> <a href="mailto:pausely.app@gmail.com">pausely.app@gmail.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="page-shell site-footer">
+    <p>
+      Contact: <a href="mailto:pausely.app@gmail.com">pausely.app@gmail.com</a>
+    </p>
+    <p class="fine-print">
+      Copyright Pausely. Privacy Policy last updated May 8, 2026.
+    </p>
+  </footer>
+</body>
+</html>
